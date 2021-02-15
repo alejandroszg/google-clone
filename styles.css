@@ -58,3 +58,16 @@ main .container-main .google-logo {
     text-align: center;
 }
 
+main .container-main .search-box {
+    outline: none;
+    border: 1px solid #e2e2e2;
+    border-radius: 25px;
+    line-height: 2.6rem;
+    width: 560px;
+    margin: 20px 0;
+    padding-left: 50px;
+    background-image: url('./assets/loupe.png'), url('./assets/mic.png');
+    background-position: 20px center, 520px center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 18px, 15px;
+}
