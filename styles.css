@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*----------  HEADER  ----------*/
 
 body {
@@ -96,6 +100,7 @@ main .main-input input {
     height: 40px;
     border: none;
     outline: none;
+    padding-left: 10px;
 }
 
 main .main-input .main-input-container:hover {
@@ -151,28 +156,40 @@ main .main-buttons button:hover {
 /*----------  FOOTER  ----------*/
 
 footer {
-    background: rgba(242,242,242);
-    color: rgba(0,0,0,.54);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    color: #6f6f6f
 }
 
 footer .row1 {
-    line-height: 3rem;
     border-bottom: 1px solid #dadce0;
-    padding-left: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
 }
 
 footer .row2 {
-    line-height: 3rem;
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
+    align-items: center;
+    height: 50px;
 }
 
-footer .row2 .col1 ul, footer .row2 .col2 ul {
+footer .row2 .col1, footer .row2 .col2 {
     list-style: none;
+    padding: 0 20px;
 }
 
-footer .row2 .col1 ul li, footer .row2 .col2 ul li {
+footer .row2 .col1 li, footer .row2 .col2 li {
     display: inline-block;
     margin-right: 10px;
+}
+
+footer .row2 .col1 li a, footer .row2 .col2 li a {
+    color: #6f6f6f;
 }
